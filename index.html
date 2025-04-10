@@ -5,6 +5,13 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crossy Road Game</title>
+    <script>
+      window.addEventListener("load", () => {
+  const loadingScreen = document.getElementById("loading-screen");
+  loadingScreen.style.opacity = 0;
+  setTimeout(() => loadingScreen.style.display = "none", 500); // Give it time to fade
+});
+    </script>
     <script type="module" src="./assets/index-DY63Sumg.js"></script>
     <link rel="stylesheet"  href="./assets/index-CD6BmueZ.css">
   </head>
