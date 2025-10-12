@@ -6,6 +6,9 @@ A simple browser game inspired by Crossy Road, built using HTML, CSS, and JavaSc
 1. Download the zip file and extract the content
 2. Open the folder in VS Code and run using Live Server.
 
+   OR
+Test out the live-demo [here](https://oluwatomi-omotoso.github.io/Crossy_Road_Game/)
+
 
 ## 🚀 Features
 ✅ Fun gameplay with keyboard controls and on screen controls
