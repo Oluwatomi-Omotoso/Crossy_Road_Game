@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crossy Road</title>
+    <script type="module" crossorigin src="/assets/index-DYqg1K8Z.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CcUpfP56.css">
+  </head>
+  <body>
+    <!-- canvas -->
+    <canvas class="game"></canvas>
+
+    <!-- logo -->
+    <div id="logo-overlay">
+      <img src="/assets/CrossyRoad-CnbBw_OL.png" alt="Logo" />
+    </div>
+
+    <!-- controls -->
+    <div id="controls">
+      <div>
+        <button id="forward">▲</button>
+        <button id="left">◀</button>
+        <button id="backward">▼</button>
+        <button id="right">▶</button>
+      </div>
+    </div>
+
+    <!-- score counter -->
+
+    <div id="Score">
+      <div id="score-button">0</div>
+    </div>
+
+    <!-- game over screen -->
+    <div id="result-container">
+      <div id="result">
+        <h1>Game Over</h1>
+        <span id="score-container">
+          <p>Score:<span id="final-score"></span></p>
+        </span>
+        <buttton id="retry">Retry</buttton>
+      </div>
+    </div>
+
+    <!-- Pause button -->
+    <div id="Pause-Menu">
+      <button id="Pause-button">||</button>
+    </div>
+
+    <!-- Pause Overlay -->
+    <div id="pause-overlay">
+      <div id="Logo">
+        <img src="/assets/CrossyRoad-CnbBw_OL.png" alt="Logo" />
+      </div>
+
+      <div id="Menus">
+        <div id="Options Menu">
+          <button id="Options-Button">OPTIONS</button>
+        </div>
+
+        <div id="Resume Menu">
+          <button id="Resume-Button">RESUME</button>
+        </div>
+
+        <div id="">
+          <button id="Restart-Button">RESTART</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="options-menu" class="game-ui-overlay hidden">
+      <div class="options-content">
+        <h2>Game Options</h2>
+
+        <div class="option-group">
+          <label for="sound-volume">Sound Effects:</label>
+          <input type="range" id="sound-volume" min="0" max="100" value="75" />
+          <span id="sound-value">75</span>
+        </div>
+
+        <div class="option-group">
+          <label for="music-volume">Music:</label>
+          <input type="range" id="music-volume" min="0" max="100" value="50" />
+          <span id="music-value">50</span>
+        </div>
+
+        <div class="option-group">
+          <label for="vibration-toggle">Controller Vibration:</label>
+          <input type="checkbox" id="vibration-toggle" checked />
+        </div>
+
+        <div class="option-group">
+          <label for="resolution-select">Screen Resolution:</label>
+          <select id="resolution-select">
+            <option value="1920x1080">1920x1080 (Full HD)</option>
+            <option value="1280x720" selected>1280x720 (HD)</option>
+            <option value="800x600">800x600</option>
+          </select>
+        </div>
+
+        <div class="option-buttons">
+          <button id="save-options">Save & Close</button>
+          <button id="close-options">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
